@@ -17,7 +17,7 @@ while continuer :
 
         lettre = click.getchar()
 
-        vitesse = 100
+        vitesse = 254
 
         if lettre == "z":
             spytank.avance(vitesse)
