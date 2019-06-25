@@ -8,15 +8,17 @@
 
 import spytank
 import time
+import click
 
 print("z : avancer\nq : gauche\ns : reculer\nd : droite\ne/r : led\na : stop\nc : exit")
 print("entre une lettre pour piloter le robot comme dans la description")
 continuer = True
 while continuer :
 
-        lettre = input(">>")
+        lettre = click.getchar()
 
-        vitesse = 200
+        vitesse = 255
+
         if lettre == "z":
             spytank.avance(vitesse)
         elif lettre == "q":
